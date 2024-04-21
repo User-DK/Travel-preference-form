@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Travel-Preference-Survey
+    </title>
+    <link rel="stylesheet" href="./styles.css">
+    <script type="module" src="src/client.js"></script>
+</head>
+<header>
+    <h1 id="title">Travel Preference Survey</h1>
+    <p id="description">This fun and interactive form will help us understand your travel preferences:)</p>
+</header>
+
+<body>
+
+    <form class="survey-form">
+        <fieldset class="personal">
+            <legend style="text-align: center;">Personal Details</legend>
+            <hr>
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Enter your name" required />
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your Email" required />
+            <label for="age">Age (optional)</label>
+            <input type="number" min="16" max="100" id="age" placeholder="Age" required />
+            <label for="occupation">What is your current occupation? (optional)</label>
+            <input type="text" id="occupation" placeholder="occupation" />
+        </fieldset>
+        <hr>
+        <fieldset class="destinationPref">
+            <legend>1. Destination Preference:</legend>
+            <label id="1">Which type of travel destination do you prefer the most? (Select all that apply)
+                <label for="1.1"><input type="checkbox" value="Beaches and Tropical Islands" id="1.1" required />
+                    Beaches and Tropical Islands</label>
+                <label for="1.2"><input type="checkbox" value="Mountains and Nature Retreats" id="1.2" /> Mountains and
+                    Nature Retreats</label>
+            </label>
+            <label for="1.3"><input type="checkbox" value="Vibrant Cities with Cultural Attractions" id="1.3" /> Vibrant
+                Cities with Cultural Attractions</label>
+            </label>
+            <label for="1.4"><input type="checkbox" value="Historical Sites and Landmarks" id="1.4" /> Historical Sites
+                and Landmarks</label>
+            </label>
+            <label for="1.5"><input type="checkbox" value="Adventure-filled Countryside" id="1.5" /> Adventure-filled
+                Countryside</label>
+            </label>
+            <label for="1.6"><input type="checkbox" value="Off-the-beaten-path and Remote Destinations" id="1.6" />
+                Off-the-beaten-path and Remote Destinations</label>
+            </label>
+        </fieldset>
+        <hr>
+        <fieldset class="travelAct">
+            <legend>2. Travel Activities:</legend>
+            <label id="2">What types of activities do you enjoy during your travels? (Select all that apply)
+                <label for="2.1"><input type="checkbox" value="Hiking and Nature Walks" id="2.1" required /> Hiking and
+                    Nature Walks</label>
+                <label for="2.2"><input type="checkbox" value="Water Sports and Beach Activities" id="2.2" /> Water
+                    Sports and Beach Activities</label>
+            </label>
+            <label for="2.3"><input type="checkbox" value="Cultural Experiences and Local Tours" id="2.3" /> Cultural
+                Experiences and Local Tours</label>
+            </label>
+            <label for="2.4"><input type="checkbox" value="Shopping and Souvenir Hunting" id="2.4" /> Shopping and
+                Souvenir Hunting</label>
+            </label>
+            <label for="2.5"><input type="checkbox" value="Sightseeing and Landmark Visits" id="2.6" /> Sightseeing and
+                Landmark Visits</label>
+            </label>
+            <label for="2.6"><input type="checkbox" value="Nightlife and Entertainment" id="2.6" /> Nightlife and
+                Entertainment</label>
+            </label>
+        </fieldset>
+        <hr>
+        <fieldset class="travelBud">
+            <legend>3. Travel Budget:</legend>
+            <label id="3">What is your typical travel budget range per person for a week-long trip (including
+                accommodation, meals, and activities)?</label>
+            <label for="3.1"><input type="radio" name="budget" value="Budget-friendly" id="3.1" required />
+                Budget-friendly ($ - $$)</label>
+            <label for="3.2"><input type="radio" name="budget" value="Moderate" id="3.2" /> Moderate ($$ - $$$)</label>
+            <label for="3.3"><input type="radio" name="budget" value="Luxury" id="3.3" /> Luxury ($$$ - $$$$)</label>
+        </fieldset>
+        <hr>
+
+        <fieldset class="accommodation">
+            <legend>4. Accommodation Preferences:</legend>
+            <label id="4">Which type of accommodation do you prefer during your travels? (Select all that apply)</label>
+            <label for="4.1"><input type="checkbox" value="Hotels and Resorts" id="4.1" required /> Hotels and
+                Resorts</label>
+            <label for="4.2"><input type="checkbox" value="Hostels and Guesthouses" id="4.2" /> Hostels and
+                Guesthouses</label>
+            <label for="4.3"><input type="checkbox" value="Vacation Rentals (Airbnb, HomeAway, etc.)" id="4.3" />
+                Vacation
+                Rentals (Airbnb, HomeAway, etc.)</label>
+            <label for="4.4"><input type="checkbox" value="Camping and Outdoor Lodging" id="4.4" /> Camping and Outdoor
+                Lodging</label>
+            <label for="4.5"><input type="checkbox" value="Boutique or Design Hotels" id="4.5" /> Boutique or Design
+                Hotels</label>
+            <label for="4.6"><input type="checkbox" value="Eco-friendly and Sustainable Accommodations" id="4.6" />
+                Eco-friendly
+                and Sustainable Accommodations</label>
+        </fieldset>
+        <hr>
+
+        <fieldset class="transportation">
+            <legend>5. Transportation Preferences:</legend>
+            <label id="5">What is your preferred mode of transportation during travel?</label>
+            <label for="5.1"><input type="radio" name="transportation" value="Flights" id="5.1" required />
+                Flights</label>
+            <label for="5.2"><input type="radio" name="transportation" value="Trains" id="5.2" /> Trains</label>
+            <label for="5.3"><input type="radio" name="transportation" value="Buses and Coaches" id="5.3" /> Buses and
+                Coaches</label>
+            <label for="5.4"><input type="radio" name="transportation" value="Rental Cars or Self-Driving" id="5.4" />
+                Rental Cars or Self-Driving</label>
+            <label for="5.5"><input type="radio" name="transportation" value="Cruises or Boats" id="5.5" /> Cruises or
+                Boats</label>
+        </fieldset>
+        <hr>
+
+        <fieldset>
+            <legend>6. Travel Companions:</legend>
+            <label id="6">With whom do you prefer to travel?</label>
+            <label for="6.1"><input type="radio" name="companions" value="Solo Travel" id="6.1" required /> Solo
+                Travel</label>
+            <label for="6.2"><input type="radio" name="companions" value="Family" id="6.2" /> Family</label>
+            <label for="6.3"><input type="radio" name="companions" value="Friends" id="6.3" /> Friends</label>
+            <label for="6.4"><input type="radio" name="companions" value="Significant Other" id="6.4" /> Significant
+                Other</label>
+            <label for="6.5"><input type="radio" name="companions" value="Group Tours or Organized Travel" id="6.5" />
+                Group Tours or Organized Travel</label>
+        </fieldset>
+        <hr>
+
+        <fieldset>
+            <legend>7. Travel Duration:</legend>
+            <label id="7">How long do your typical trips last?</label>
+            <label for="7.1"><input type="radio" value="Weekend Getaways (2-3 days)" name="duration" id="7.1"
+                    required /> Weekend Getaways (2-3 days)</label>
+            <label for="7.2"><input type="radio" value="Short Vacations (4-7 days)" name="duration" id="7.2" /> Short
+                Vacations (4-7 days)</label>
+            <label for="7.3"><input type="radio" value="Extended Holidays (1-2 weeks)" name="duration" id="7.3" />
+                Extended Holidays (1-2 weeks)</label>
+            <label for="7.4"><input type="radio" value="Long-term Travel (1 month or more)" name="duration" id="7.4" />
+                Long-term Travel (1 month or more)</label>
+        </fieldset>
+        <hr>
+
+        <fieldset>
+            <legend>8. Travel Booking:</legend>
+            <label id="8">How do you usually book your travel arrangements?</label>
+            <label for="8.1"><input type="radio" name="booking"
+                    value="Online Travel Agencies (Expedia, Booking.com, etc.)" id="8.1" required /> Online Travel
+                Agencies (Expedia, Booking.com, etc.)</label>
+            <label for="8.2"><input type="radio" name="booking" value="Directly through Airlines or Hotels" id="8.2" />
+                Directly through Airlines or Hotels</label>
+            <label for="8.3"><input type="radio" name="booking" value="Travel Agents" id="8.3" /> Travel Agents</label>
+            <label for="8.4"><input type="radio" name="booking" value="Mobile Apps (Skyscanner, Airbnb, etc.)"
+                    id="8.4" /> Mobile Apps (Skyscanner, Airbnb, etc.)</label>
+        </fieldset>
+        <hr>
+
+        <fieldset>
+            <legend>9. Cuisine Preferences:</legend>
+            <label id="9">Do you enjoy trying local cuisines during your travels?</label>
+            <label for="9.1"><input type="radio" name="cuisine" value="Yes, I love exploring new dishes!" id="9.1"
+                    required /> Yes, I love exploring new dishes!</label>
+            <label for="9.2"><input type="radio" name="cuisine" value="Not always, but I'll try some specialties."
+                    id="9.2" /> Not always, but I'll try some specialties.</label>
+            <label for="9.3"><input type="radio" name="cuisine" value="No, I prefer familiar food options." id="9.3" />
+                No, I prefer familiar food options.</label>
+        </fieldset>
+        <hr>
+
+        <fieldset>
+            <legend>10. Language and Culture:</legend>
+            <label id="10">Do you enjoy immersing yourself in the local culture and learning a few basic phrases of the
+                local language?</label>
+            <label for="10.1"><input type="radio" name="culture" value="Absolutely, it enhances the travel experience!"
+                    id="10.1" required /> Absolutely, it enhances the travel experience!</label>
+            <label for="10.2"><input type="radio" name="culture" value="Sometimes, when I can communicate with locals."
+                    id="10.2" /> Sometimes, when I can communicate with locals.</label>
+            <label for="10.3"><input type="radio" name="culture" value="Not really, I prefer sticking to my language."
+                    id="10.3" /> Not really, I prefer sticking to my language.</label>
+        </fieldset>
+        <hr>
+
+        <fieldset>
+            <legend>11. Must-See Attractions:</legend>
+            <label id="11">Are there any specific destinations or attractions you've always wanted to visit? Please
+                share!</label>
+            <textarea name="mustSee" id="11.1" rows="3" placeholder="Enter your response here..." required></textarea>
+        </fieldset>
+        <hr>
+
+        <fieldset>
+            <legend>12. Travel Frequency:</legend>
+            <label id="12">How often do you travel in a year?</label>
+            <label for="12.1"><input type="radio" name="frequency" value="Rarely or Once a Year" id="12.1" required />
+                Rarely or Once a Year</label>
+            <label for="12.2"><input type="radio" name="frequency" value="2-3 Times a Year" id="12.2" /> 2-3 Times a
+                Year</label>
+            <label for="12.3"><input type="radio" name="frequency" value="4-6 Times a Year" id="12.3" /> 4-6 Times a
+                Year</label>
+            <label for="12.4"><input type="radio" name="frequency" value="More than 6 Times a Year" id="12.4" /> More
+                than 6 Times a Year</label>
+        </fieldset>
+        <hr>
+
+        <fieldset>
+            <legend>13. Seasonal Preferences:</legend>
+            <label id="13">Do you prefer traveling during specific seasons, or are you open to travel
+                year-round?</label>
+            <label for="13.1"><input type="radio" name="season" value="I have specific favorite seasons for travel."
+                    id="13.1" required /> I have specific favorite seasons for travel.</label>
+            <label for="13.2"><input type="radio" name="season"
+                    value=" I'm open to traveling anytime throughout the year." id="13.2" /> I'm open to traveling
+                anytime throughout the year.</label>
+        </fieldset>
+        <hr>
+
+        <fieldset>
+            <legend>14. Sustainability:</legend>
+            <label id="14">Do you prioritize sustainable and eco-friendly travel practices?</label>
+            <label for="14.1"><input type="radio" name="sustainability"
+                    value="Yes, I always try to be eco-conscious in my travels." id="14.1" required /> Yes, I always try
+                to be eco-conscious in my travels.</label>
+            <label for="14.2"><input type="radio" name="sustainability"
+                    value="I consider sustainability, but it's not my primary focus." id="14.2" /> I consider
+                sustainability, but it's not my primary focus.</label>
+            <label for="14.3"><input type="radio" name="sustainability"
+                    value=" It's not something I actively think about during travel." id="14.3" /> It's not something I
+                actively think about during travel.</label>
+        </fieldset>
+        <hr>
+
+        <fieldset>
+            <legend>15. Preferred Travel Season:</legend>
+            <label for="season">During which season do you prefer to travel the most?</label>
+            <select id="season" name="season" required>
+                <option value="" disabled selected>Select an option</option>
+                <option value="spring">Spring</option>
+                <option value="summer">Summer</option>
+                <option value="autumn">Autumn</option>
+                <option value="winter">Winter</option>
+                <option value="all">I enjoy traveling in all seasons</option>
+            </select>
+        </fieldset>
+        <hr>
+
+        <fieldset>
+            <legend>16. Travel Insurance</legend>
+            <label id="16">Do you usually purchase travel insurance for your trips?</label>
+            <label for="16.1"><input type="radio" name="insurance" value="Yes, I always get travel insurance." id="16.1"
+                    required /> Yes, I always get travel insurance.</label>
+            <label for="16.2"><input type="radio" name="insurance"
+                    value="I consider it based on the destination and activities." id="16.2" /> I consider it based on
+                the destination and activities.</label>
+            <label for="16.3"><input type="radio" name="insurance" value="No, I prefer not to get travel insurance."
+                    id="16.3" /> No, I prefer not to get travel insurance.</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>17. Additional Comments:</legend>
+            <label for="comments">Is there anything else you'd like to share about your travel preferences or
+                experiences?</label>
+            <textarea name="comments" id="comments" rows="3" placeholder="Enter your response here..."></textarea>
+        </fieldset>
+
+        <div class="hidden">
+            <input type="text" id="field" name="field" class="hidden" style="display:none !important" tabindex="-1"
+                autocomplete="false">
+        </div>
+
+        <label><button type="submit" onclick="">Submit</button></label>
+    </form>
+</body>
+
+</html>

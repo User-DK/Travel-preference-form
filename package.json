@@ -1,0 +1,25 @@
+{
+  "name": "surveyformbyme",
+  "version": "1.0.0",
+  "description": "surveyForm",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "build": "webpack"
+  },
+  "author": "daivik",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "path-browserify": "^1.0.1",
+    "util": "^0.12.5",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4"
+  }
+}
